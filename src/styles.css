@@ -1,0 +1,147 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+/* 
+Header related css styles start...
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 5%;
+}
+
+.custom-navbar a:hover {
+    color: #00BCFB;
+    border-bottom: 2px solid;
+    cursor: pointer;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.custom-navbar a {
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-table;
+    color: #1e1e1e;
+    font-weight: 350;
+    letter-spacing: 2px;
+    /* background: #8395a7; */
+    /* padding-left: 2%; */
+    /* padding-right: 2%; */
+}
+
+.custnav {
+    /* Change the background property to change the navbar background */
+    /*  */
+    background-color: #0089BA !important;
+    /* background-image: linear-gradient(to right top, #051937, #044268, #007199, #00a3c6, #12d8eb); */
+    border-bottom: 2px solid #eaeaea !important;
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
+.navbar-brand {
+    /* color: #00BCFB !important; */
+    /* color: #8395a7 !important; */
+    color: #FFF !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.navbar-brand-custom {
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media(max-width:575px) {
+    .navbar-brand {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.badge {
+    background-color: #00BCFB !important;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.fa-shopping-cart {
+    font-size: 20px !important;
+}
+
+.badge-pill {
+    margin-top: -18px !important;
+    margin-left: -10px !important;
+    background-color: #d35400 !important;
+    color: #fff;
+}
+
+/* 
+Header related css styles End...
+*/
+
+/* Common styles start...*/
+
+.common-text {
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Common styles end... */
+
+/* 
+Project page related styles start ...
+*/
+
+.custom-container {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+.project-filters {
+    min-height: 100px !important;
+    /* border-right: 1px solid #38486F; */
+}
+
+.college-project-header {
+    font-size: 20px;
+    color: #296073;
+    text-transform: uppercase;
+}
+
+.project-card {}
+
+.project-card-header {
+    border: none !important;
+    background: #009EFA;
+    color: #fff;
+}
+
+.project-card-body {
+    border-top: none !important;
+    border: 1px solid #0089BA !important;
+}
+
+.project-details {
+    text-align: right;
+}
+
+/* 
+Project page related styles end ...
+ */
