@@ -1,0 +1,62 @@
+<header></header>
+<div class="customcontainer">
+
+  <div class="regcontainer">
+    <div class="titlediv">
+      <h1>Member Registration</h1>
+    </div>
+    <div class="registerform">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" [(ngModel)]="user.email" name="user.email">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="inputPassword4" placeholder="User Name" [(ngModel)]="user.userName" name="user.userName">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="user.password" name="user.password">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password" [(ngModel)]="user.confirmPassword"
+              name="user.confirmPassword">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="inputAddress" placeholder="Address Line 1" [(ngModel)]="address.addressLine1"
+            name="address.addressLine1">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Address Line 2" [(ngModel)]="address.addressLine2"
+            name="address.addressLine2">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="inputCity" placeholder="City" [(ngModel)]="address.city" name="address.city">
+          </div>
+          <div class="form-group col-md-2">
+            <input type="text" class="form-control" id="inputZip" placeholder="Zip" [(ngModel)]="address.zipCode" name="address.zipCode">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-custom">Role</label>
+              <select class="form-control" [(ngModel)]="user.userRole" (change)="onChange($event)" name="userRole">
+                <option *ngFor="let userRole of userRoles" [ngValue]="userRole">{{userRole}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary sign-up-btn" (click)="register()">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</div>
