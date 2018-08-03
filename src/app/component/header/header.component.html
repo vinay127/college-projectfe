@@ -1,1 +1,14 @@
-<customerheader></customerheader>
+<div *ngIf="isValidUser">
+    <div *ngIf="isUser">
+        <customerheader></customerheader>
+    </div>
+    <!-- <div *ngIf="!isUser">
+        <catererheader></catererheader>
+    </div> -->
+</div>
+<div *ngIf="!isValidUser">
+    <generalheader></generalheader>
+</div>
+<section>
+    <error></error>
+</section>

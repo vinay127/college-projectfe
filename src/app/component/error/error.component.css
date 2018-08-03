@@ -1,0 +1,35 @@
+.alerterror {
+    padding: 10px;
+    background-color: rgb(224, 13, 13);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color:white;
+    width:30%;
+    margin-left:35%
+}
+
+.alertsuccess {
+    padding: 20px;
+    background-color: #d7f1e5;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(1, 105, 88);
+    width:70%;
+    margin-left:25%
+}
+
+
+.closebtn {
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+   
+}
+
+.closebtn:hover {
+    color: black;
+}

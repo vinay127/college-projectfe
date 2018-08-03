@@ -1,0 +1,88 @@
+body {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #36D1DC no-repeat center center fixed;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.customcontainer {
+	width: auto;
+	height: auto;
+	padding-top: 5%;
+	overflow: hidden !important;
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.regcontainer {
+	width: 30%;
+	height: 40vh;
+	margin: auto;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.registerform {
+	width: 90%;
+	height: 70%;
+	background-color: white;
+	margin: 50px auto;
+}
+
+.titlediv {
+	letter-spacing: 2px;
+	font-family: 'lato', sans-serif;
+	text-transform: uppercase;
+	font-size: 35px !important;
+	color: #0082BB;
+	text-align: center !important;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.login-btn {
+	min-width: 80px;
+	font-family: 'lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	border-radius: 30px;
+	border: none;
+	background: #00B4DB;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #0083B0, #00B4DB);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media(max-width: 575px) {
+	.customcontainer {
+		width: 90%;
+		padding-top: 15%;
+	}
+	.regcontainer {
+		margin-left: 5%;
+		width: 100%;
+	}
+	.registerform {
+		width: 100%;
+	}
+	.titlediv {
+		font-size: 12px !important;
+	}
+}

@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <header></header>
+    <div class="customcontainer">
+        <div class="regcontainer">
+
+            <div class="registerform">
+                <div class="titlediv">
+                    Login
+                </div>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" [(ngModel)]="user.email" name="user.email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" [(ngModel)]="user.password" name="user.userName">
+                    </div>
+                    <button type="submit" class="btn btn-primary login-btn" (click)="login()">Login</button>
+                    <br> If you don't have account then please
+                    <button type="submit" class="btn btn-primary login-btn" (click)="signup()">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
